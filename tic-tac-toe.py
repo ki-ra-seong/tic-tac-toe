@@ -15,14 +15,14 @@ def checked(i) :
       else :
             player = "X"
             button["bg"] = "lightgreen"
-sdsdsds
+
 window = Tk()
 player = "X"
 list= []
 
-for i in range(12) :
+for i in range(9) :
       b = Button(window, text="     ", command=lambda k=i: checked(k))
-      b.grid(row=i//4, column=i%4)
+      b.grid(row=i//3, column=i%3)
       list.append(b)
 
 window.mainloop()
