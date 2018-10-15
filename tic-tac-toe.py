@@ -6,25 +6,23 @@ def checked(i) :
 
       if button["text"] != "     " :
             return
-      button["text"] = player 
+      button["text"] = player
       button["bg"] = "yellow"
 
       if player == "X" :
-            player = "O"
+            player = "A"
             button["bg"] = "yellow"
       else :
             player = "X"
             button["bg"] = "lightgreen"
-
+sdsdsds
 window = Tk()
 player = "X"
 list= []
 
-for i in range(9) :
+for i in range(12) :
       b = Button(window, text="     ", command=lambda k=i: checked(k))
-      b.grid(row=i//3, column=i%3)
+      b.grid(row=i//4, column=i%4)
       list.append(b)
 
 window.mainloop()
-
-
